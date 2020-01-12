@@ -1,0 +1,48 @@
+/*----------------     
+        Current Weather
+-----------------*/
+
+#current {
+  padding-top: 10%;
+  padding-left: 2%;
+  position: absolute;
+  left: auto;
+  width: 20%;
+}
+
+.location {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.timestamp {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+#current .weatherIcon {
+  height: 100px;
+  margin: 10% auto 7%;
+  width: 120px;
+}
+
+.temp {
+  font-size: 3em;
+  line-height: 1.3;
+}
+
+.temp:after {
+  content: '\00b0';
+  margin-right: -0.3em;
+}
+
+.additional {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+#current .conditions {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,16 @@
+#history {
+  float: right;
+  width: 80%;
+  height: 50%;
+}
+
+#wind {
+  float: left;
+  width: 65%;
+}
+
+#humid {
+  float: right;
+  width: 35%;
+  margin-top: 8%;
+}
