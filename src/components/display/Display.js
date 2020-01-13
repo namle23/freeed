@@ -6,6 +6,8 @@ import History from '../history/History'
 
 let urlCurrent = 'https://evening-oasis-60569.herokuapp.com/current'
 let urlHistory = 'https://evening-oasis-60569.herokuapp.com/history'
+// let urlCurrent = 'http://localhost:8080/current'
+// let urlHistory = 'http://localhost:8080/history'
 
 class Display extends Component {
   constructor(props) {
@@ -42,8 +44,8 @@ class Display extends Component {
       this.setState({ historyData: history.data })
     })
 
-    setInterval(this.getCurrentWeatherData, 3600000)
-    setInterval(this.getHistoryData, 3600000)
+    setInterval(this.getCurrentWeatherData, 30000)
+    setInterval(this.getHistoryData, 30000)
 
     setInterval(() => {
       this.getCurrentWeatherData().then(weather => {
@@ -53,7 +55,7 @@ class Display extends Component {
       this.getHistoryData().then(history => {
         this.setState({ historyData: history.data })
       })
-    }, 3600000)
+    }, 30000)
   }
 
   render() {
