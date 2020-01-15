@@ -11,8 +11,7 @@ class Display extends Component {
     this.state = {
       weatherData: false,
       historyData: [],
-      endpoint: 'https://evening-oasis-60569.herokuapp.com',
-      test: false
+      endpoint: 'https://evening-oasis-60569.herokuapp.com'
     }
   }
 

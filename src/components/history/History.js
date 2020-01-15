@@ -21,7 +21,7 @@ class History extends Component {
         temps.push([0, parseFloat(this.props.historyData[i].temp)])
         timestamps.push(
           new Date(
-            parseInt(this.props.historyData[i].timestamp) * 1000
+            parseInt(this.props.historyData[i].timestam) * 1000
           ).toLocaleString()
         )
         winds.push(parseFloat(this.props.historyData[i].wind_speed))
@@ -120,10 +120,12 @@ class History extends Component {
         </div>
         <br />
         <br />
+
         <div className="windHumid">
           <div id="wind">
             <canvas ref={node => (this.nodeWind = node)} />
           </div>
+
           <div id="humid">
             <canvas ref={node => (this.nodeHumid = node)} />
           </div>
